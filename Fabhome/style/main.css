@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Roboto Black";
+    src: url("../fonts/roboto-black-webfont.eot");
+url("../fonts/roboto-black-webfont") format("woff"),
+url("../fonts/roboto-black-webfont") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/roboto-light-webfont.eot");
+url("../fonts/roboto-light-webfont") format("woff"),
+url("../fonts/roboto-light-webfont") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../fonts/roboto-medium-webfont.eot");
+url("../fonts/roboto-medium-webfont") format("woff"),
+url("../fonts/roboto-medium-webfont") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+header, section, footer, aside, nav, article, figure, figcaption {
+    display: block;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+
+body{
+    color: #666666;
+    background-color: #fafafa;
+    font-family: 'Roboto Light', Georgia, times, serif;
+    font-size: 16px;
+    outline: none;
+    margin:0;
+}
