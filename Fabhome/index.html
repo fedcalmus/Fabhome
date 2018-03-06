@@ -18,53 +18,72 @@
     <link rel="icon" href="" type="image/x-icon">
     <!-- End Favicon-->
 
+    <!--Start Google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <!--End Google fonts-->
 </head>
 <body>
 <header>
-    <div class="logo">
-        <a href="#"><img src="img/logo.png" alt="logo"></a>
-    </div>
-    <nav>
+    <div class="headerItems clearAfter ">
+        <div class="logo">
+        <a href="#"><img class="logoImage" src="img/logo.png" alt="logo"></a>
+        </div>
+        <nav class="navigation">
         <ul class="navItems">
             <li><a href="#">Apply</a></li>
             <li><a href="#">Sign In</a></li>
             <li><a href="#">Post Apartment</a></li>
         </ul>
     </nav>
-</header>
-<div class="container">
-    <div class="propertySection">
-        <h4 class="propertyName">Property name</h4>
-        <p class="locationInfo"><i class="fas fa-map-marker-alt"></i> 8617 Columbia Street Glendora, CA 91740</p>
     </div>
+</header>
+<div class="propertySection">
+    <div class="propertyContent">
+    <h4 class="propertyName">Property name</h4>
+    <p class="locationInfo"><i class="fas fa-map-marker-alt"></i> 8617 Columbia Street Glendora, CA 91740</p>
+    </div>
+</div>
+<div class="container">
     <div class="propertyInfo">
         <div class="propertyDetails">
                 <span class="propertyPrice">$60</span>
-                <p>per day</p>
+                <p class="perDay">per day</p>
         </div>
-    </div>
     <div class="propertyTypes">
         <div class="propertyType">
-            <img src="img/property.png" alt="property">
-            <p>Property type</p>
-            <p>Mobile manufactured</p>
+            <img src="img/property.png"  alt="property">
+            <div class="propertyTexts">
+                <p class="propCategory">Property type</p>
+                <p class="propCategoryNumber">Mobile manufactured</p>
+            </div>
         </div>
         <div class="propertyType">
-            <img src="img/bedroom.png" alt="bedrooms">
-            <p>Bedrooms</p>
-            <p>3</p>
+            <img  src="img/bedroom.png" alt="bedrooms">
+            <div class="propertyTexts">
+            <p class="propCategory">Bedrooms</p>
+            <p class="propCategoryNumber">3</p>
+            </div>
         </div>
         <div class="propertyType">
-            <img src="img/bathroom.png" alt="bathrooms">
-            <p>Bathrooms</p>
-            <p>2</p>
+            <img class="propertyImage" src="img/bathroom.png" alt="bathrooms">
+            <div class="propertyTexts">
+                <p class="propCategory">Bathrooms</p>
+                <p class="propCategoryNumber">2</p>
+            </div>
         </div>
         <div class="propertyType">
-            <img src="img/pets.png" alt="pets">
-            <p>Pets</p>
-            <p>Not allowed</p>
+            <img class="propertyImage" src="img/pets.png" alt="pets">
+            <div class="propertyTexts clearAfter">
+                <p class="propCategory">Pets</p>
+                <p class="propCategoryNumber">Not allowed</p>
         </div>
     </div>
+    </div>
+    </div>
+
+
+
+
     <div class="propertyMain">
         <div class="slideshow">
             <div class="mySlides">
@@ -100,19 +119,19 @@
 
             <div class="row">
                 <div class="column">
-                    <img class="demo cursor" src="img/slideshow1" style="width:100%" onclick="currentSlide(1)" alt="slideshow1">
+                    <img class="demo cursor" src="img/slideshow1.png" style="width:100%" onclick="currentSlide(1)" alt="slideshow1">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img/slideshow2" style="width:100%" onclick="currentSlide(2)" alt="slideshow2">
+                    <img class="demo cursor" src="img/slideshow2.png" style="width:100%" onclick="currentSlide(2)" alt="slideshow2">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img/slideshow3" style="width:100%" onclick="currentSlide(3)" alt="slideshow3">
+                    <img class="demo cursor" src="img/slideshow3.png" style="width:100%" onclick="currentSlide(3)" alt="slideshow3">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img/slideshow4" style="width:100%" onclick="currentSlide(4)" alt="slideshow4">
+                    <img class="demo cursor" src="img/slideshow4.png" style="width:100%" onclick="currentSlide(4)" alt="slideshow4">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="img/slideshow5" style="width:100%" onclick="currentSlide(5)" alt="slideshow5">
+                    <img class="demo cursor" src="img/slideshow5.png" style="width:100%" onclick="currentSlide(5)" alt="slideshow5">
                 </div>
                 <div class="column">
                     <img class="demo cursor" src="img/slideshow6" style="width:100%" onclick="currentSlide(6)" alt="slideshow6">
@@ -246,5 +265,6 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA59R5PA5rrNWNRZGCLxLAa80uGNXkxaDE&callback=initMap">
 </script>
+
 </body>
 </html>
