@@ -264,12 +264,10 @@ header {
 
 
 .monthYear{
-
     font-size: 24px;
     color: #f34963;
     font-family: 'Roboto Light', Arial, sans-serif;
     font-weight: lighter;
-    margin-top: 23px;
+    margin: 15px 0;
     line-height: 1;
-
 }
