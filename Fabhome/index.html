@@ -44,7 +44,7 @@
     </div>
 </div>
 <div class="container">
-    <div class="propertyInfo">
+    <div class="propertyInfo clearAfter">
         <div class="propertyDetails">
                 <span class="propertyPrice">$60</span>
                 <p class="perDay">per day</p>
@@ -81,70 +81,20 @@
     </div>
     </div>
 
-
-
-
-    <div class="propertyMain">
+    <div class="propertyMain clearAfter">
         <div class="slideshow">
-            <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img src="img/slideshow1.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img src="img/slideshow2.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img src="img/slideshow3.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img src="img/slideshow4.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img src="img/slideshow5.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                <img src="img/slideshow6.png" style="width:100%">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
-
-            <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="img/slideshow1.png" style="width:100%" onclick="currentSlide(1)" alt="slideshow1">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="img/slideshow2.png" style="width:100%" onclick="currentSlide(2)" alt="slideshow2">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="img/slideshow3.png" style="width:100%" onclick="currentSlide(3)" alt="slideshow3">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="img/slideshow4.png" style="width:100%" onclick="currentSlide(4)" alt="slideshow4">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="img/slideshow5.png" style="width:100%" onclick="currentSlide(5)" alt="slideshow5">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="img/slideshow6" style="width:100%" onclick="currentSlide(6)" alt="slideshow6">
-                </div>
-            </div>
         </div>
-    </div>
-    <div class="leftSideContent">
-        <button type="button">Check availability</button>
+    <div class="rightSideContent">
+        <button type="button" class="checkButton">Check availability</button>
         <div class="dateSection">
-            <p> Start date</p>
-            <p>31</p>
-            <p>2016</p>
+            <p class="startDate"> Start date</p>
+            <div class="dateDay">
+            <span class="day">31</span>
+                <div class="monthYear">
+                    <p class="month">JAN</p>
+                    <p class="year">2016</p>
+            </div>
+            </div>
         </div>
         <div class="notesSection">
                 <p>Notes
@@ -169,6 +119,7 @@
                 <li><img src="img/linkedin.png" href="#" alt="LinkedIn"></li>
             </ul>
         </div>
+    </div>
     </div>
     <div class="propertyDescription">
         <h3>Property Description</h3>
