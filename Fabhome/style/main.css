@@ -87,6 +87,7 @@ header {
 .navItems {
     list-style: none;
     float: right;
+    padding: 15px 0;
 }
 
 .navItems li{
