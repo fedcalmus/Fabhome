@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>Fabhome</title>
     <meta name="description"
@@ -21,10 +22,32 @@
     <!--Start Google fonts-->
     <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
     <!--End Google fonts-->
+    <!--light-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style/lightslider.min.css">
+    <script src="js/lightslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:5,
+                slideMargin: 0,
+                speed:500,
+                auto:false,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
 
-    <!--Start lightSlider-->
-    <link type="text/css" rel="stylesheet" href="style/lightslider.css" />
-    <!--End lightSlider-->
+
 </head>
 <body>
 <header>
@@ -86,7 +109,31 @@
         <div class="container">
     <div class="propertyMain clearAfter">
         <div class="slideshow">
-        </div>
+            <div class="clearfix" style="max-width:680px;">
+                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                    <li data-thumb="img/thumb/1.png">
+                        <img src="img/1.png" />
+                    </li>
+                    <li data-thumb="img/thumb/2.png">
+                        <img src="img/2.png" />
+                    </li>
+                    <li data-thumb="img/thumb/3.png">
+                        <img src="img/3.png" />
+                    </li>
+                    <li data-thumb="img/thumb/4.png">
+                        <img src="img/4.png" />
+                    </li>
+                    <li data-thumb="img/thumb/5.png">
+                        <img src="img/5.png" />
+                    </li>
+                    <li data-thumb="img/thumb/6.png">
+                        <img src="img/6.png" />
+                    </li>
+                </ul>
+            </div>
+
+            </div>
+
         <div class="propertyDescription">
         <h3 class="amenities">Property Description</h3>
         <p>Aenean tincidunt ullamcorper dignissim. Vivamus sodales placerat mauris, non commodo ligula aliquet rhoncus.
@@ -178,6 +225,7 @@
 </div>
 </div>
         </div>
+
 <footer>
     <div class="container">
         <div class="footerSections">
@@ -224,13 +272,18 @@
         </div>
 
 </footer>
+
+
 <!-- Start Site JS -->
 <script type="text/javascript" src="js/main.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA59R5PA5rrNWNRZGCLxLAa80uGNXkxaDE&callback=initMap">
 </script>
+
 <!--Start lightSlider-->
-<script src="js/lightslider.js"></script>
+
+
 <!--End lightSlider-->
+
 </body>
 </html>

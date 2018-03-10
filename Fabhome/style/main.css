@@ -224,7 +224,6 @@ header {
 .slideshow{
     height:580px;
     width:650px;
-    background-color: #0094cf;
 }
 
 .rightSideContent{
@@ -508,5 +507,9 @@ footer{
     color: #ffffff;
     font-family: 'Roboto Light', Arial, sans-serif;
     font-weight: lighter;
+}
+
+#image-gallery li{
+    height: 445px;
 }
 
