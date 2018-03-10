@@ -24,28 +24,9 @@
     <!--End Google fonts-->
     <!--light-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style/lightslider.min.css">
-    <script src="js/lightslider.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#content-slider").lightSlider({
-                loop:true,
-                keyPress:true
-            });
-            $('#image-gallery').lightSlider({
-                gallery:true,
-                item:1,
-                thumbItem:5,
-                slideMargin: 0,
-                speed:500,
-                auto:false,
-                loop:true,
-                onSliderLoad: function() {
-                    $('#image-gallery').removeClass('cS-hidden');
-                }
-            });
-        });
-    </script>
+    <link rel="stylesheet" href="style/lightslider.css">
+    <script src="js/lightslider.js"></script>
+
 
 
 </head>
@@ -272,7 +253,29 @@
         </div>
 
 </footer>
+<!--Slider starts here-->
+<script>
+    $(document).ready(function() {
+        $("#content-slider").lightSlider({
+            loop:true,
+            keyPress:true
+        });
+        $('#image-gallery').lightSlider({
+            gallery:true,
+            item:1,
+            thumbItem:5,
+            slideMargin: 0,
+            speed:500,
+            auto:false,
+            loop:true,
+            onSliderLoad: function() {
+                $('#image-gallery').removeClass('cS-hidden');
+            }
+        });
+    });
+</script>
 
+<!--Slider Ends here-->
 
 <!-- Start Site JS -->
 <script type="text/javascript" src="js/main.js"></script>

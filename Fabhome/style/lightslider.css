@@ -153,11 +153,10 @@
 
 /* slider actions */
 .lSAction > a {
-    width: 32px;
+    width: 38px;
     display: block;
     top: 50%;
-    height: 32px;
-    background-image: url('../img/controls.png');
+    height: 58px;
     cursor: pointer;
     position: absolute;
     z-index: 99;
@@ -172,10 +171,12 @@
 .lSAction > .lSPrev {
     background-position: 0 0;
     left: 10px;
+    background-image: url('../img/arrow_left.png');
 }
 .lSAction > .lSNext {
     background-position: -32px 0;
     right: 10px;
+    background-image: url('../img/arrow_right.png');
 }
 .lSAction > a.disabled {
     pointer-events: none;

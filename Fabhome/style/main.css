@@ -118,8 +118,7 @@ header {
 }
 
 .container{
-    max-width: 1170px;
-    width:1000px;
+    max-width: 1000px;
     margin:0 auto;
     padding: 0 10px;
     position:relative;
@@ -222,8 +221,10 @@ header {
 }
 
 .slideshow{
-    height:580px;
-    width:650px;
+    max-width: 650px;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 .rightSideContent{
@@ -279,7 +280,7 @@ header {
     color: #f34963;
     font-family: 'Roboto Light', Arial, sans-serif;
     font-weight: lighter;
-    margin: 23px 0;
+    margin: 23px 5px;
     line-height: 1;
 }
 
