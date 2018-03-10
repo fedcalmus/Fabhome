@@ -25,6 +25,14 @@ url("../fonts/roboto-medium-webfont") format("truetype");
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../fonts/roboto-regular-webfont.eot");
+url("../fonts/roboto-regular-webfont") format("woff"),
+url("../fonts/roboto-regular-webfont") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 header, section, footer, aside, nav, article, figure, figcaption {
     display: block;}
 html, body, div, span, applet, object, iframe,
