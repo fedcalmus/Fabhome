@@ -70,7 +70,6 @@ body{
 
 header {
     background-color: #0094cf;
-    min-height: 90px;
     width: 100%;
 }
 
@@ -120,7 +119,6 @@ header {
 
 .navigation{
     float: right;
-
 }
 
 .clearAfter::after {
